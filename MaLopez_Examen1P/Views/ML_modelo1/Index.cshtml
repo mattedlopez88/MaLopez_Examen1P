@@ -13,22 +13,25 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nombre)
+                @Html.DisplayNameFor(model => model.MLNombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Edad)
+                @Html.DisplayNameFor(model => model.MLEdad)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Direccion)
+                @Html.DisplayNameFor(model => model.MLDireccion)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Departamento)
+                @Html.DisplayNameFor(model => model.MLDepartamento)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IsCliente)
+                @Html.DisplayNameFor(model => model.MLFechaNacimiento)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Saldo)
+                @Html.DisplayNameFor(model => model.MLIsCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MLSaldo)
             </th>
             <th></th>
         </tr>
@@ -37,22 +40,25 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
+                @Html.DisplayFor(modelItem => item.MLNombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Edad)
+                @Html.DisplayFor(modelItem => item.MLEdad)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
+                @Html.DisplayFor(modelItem => item.MLDireccion)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Departamento)
+                @Html.DisplayFor(modelItem => item.MLDepartamento)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IsCliente)
+                @Html.DisplayFor(modelItem => item.MLFechaNacimiento)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Saldo)
+                @Html.DisplayFor(modelItem => item.MLIsCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MLSaldo)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

@@ -14,34 +14,39 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
+                <label asp-for="MLNombre" class="control-label"></label>
+                <input asp-for="MLNombre" class="form-control" />
+                <span asp-validation-for="MLNombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Edad" class="control-label"></label>
-                <input asp-for="Edad" class="form-control" />
-                <span asp-validation-for="Edad" class="text-danger"></span>
+                <label asp-for="MLEdad" class="control-label"></label>
+                <input asp-for="MLEdad" class="form-control" />
+                <span asp-validation-for="MLEdad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Direccion" class="control-label"></label>
-                <input asp-for="Direccion" class="form-control" />
-                <span asp-validation-for="Direccion" class="text-danger"></span>
+                <label asp-for="MLDireccion" class="control-label"></label>
+                <input asp-for="MLDireccion" class="form-control" />
+                <span asp-validation-for="MLDireccion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Departamento" class="control-label"></label>
-                <input asp-for="Departamento" class="form-control" />
-                <span asp-validation-for="Departamento" class="text-danger"></span>
+                <label asp-for="MLDepartamento" class="control-label"></label>
+                <input asp-for="MLDepartamento" class="form-control" />
+                <span asp-validation-for="MLDepartamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MLFechaNacimiento" class="control-label"></label>
+                <input asp-for="MLFechaNacimiento" class="form-control" />
+                <span asp-validation-for="MLFechaNacimiento" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsCliente" /> @Html.DisplayNameFor(model => model.IsCliente)
+                    <input class="form-check-input" asp-for="MLIsCliente" /> @Html.DisplayNameFor(model => model.MLIsCliente)
                 </label>
             </div>
             <div class="form-group">
-                <label asp-for="Saldo" class="control-label"></label>
-                <input asp-for="Saldo" class="form-control" />
-                <span asp-validation-for="Saldo" class="text-danger"></span>
+                <label asp-for="MLSaldo" class="control-label"></label>
+                <input asp-for="MLSaldo" class="form-control" />
+                <span asp-validation-for="MLSaldo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

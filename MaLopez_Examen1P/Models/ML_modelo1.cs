@@ -10,15 +10,15 @@ namespace MaLopez_Examen1P.Models
         [Required]
         [StringLength(20, ErrorMessage = "El nombre no puede exceder los 100 caracteres")]
         
-        public string? Nombre { get; set; }
-        public int Edad { get; set; }
-        public string? Direccion { get; set; }
+        public string? MLNombre { get; set; }
+        public int MLEdad { get; set; }
+        public string? MLDireccion { get; set; }
         [Required]
-        public string? Departamento { get; set; }
-        //public DateTime FechaNacimiento { get; set; }
-        public bool IsCliente { get; set; }
+        public string? MLDepartamento { get; set; }
+        public DateTime MLFechaNacimiento { get; set; }
+        public bool MLIsCliente { get; set; }
         [Range(0, 1000000)]
-        public decimal Saldo { get; set; }
+        public decimal MLSaldo { get; set; }
 
     }
 }
