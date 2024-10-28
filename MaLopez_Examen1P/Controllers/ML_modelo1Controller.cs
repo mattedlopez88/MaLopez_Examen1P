@@ -54,7 +54,7 @@ namespace MaLopez_Examen1P.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Direccion,Departamento,IsCliente,Saldo")] ML_modelo1 mL_modelo1)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Edad,Direccion,Departamento,FechaNacimiento,IsCliente,Saldo")] ML_modelo1 mL_modelo1)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace MaLopez_Examen1P.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Direccion,Departamento,IsCliente,Saldo")] ML_modelo1 mL_modelo1)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Edad,Direccion,Departamento,FechaNacimiento,IsCliente,Saldo")] ML_modelo1 mL_modelo1)
         {
             if (id != mL_modelo1.Id)
             {
